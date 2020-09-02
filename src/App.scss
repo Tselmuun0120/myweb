@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 .App {
   text-align: center;
+  span {
+     border-top: 1px solid #000;
+  }
 }
 
 .App-logo {
@@ -8,31 +13,40 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .App-image {
+    max-width: 100%;
+    height: 80vmin;
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: white;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  font-size: calc(12px + 2vmin);
+  color:black;
+  font-family: 'Lobster', cursive;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  h1 {
+    text-transform: uppercase;
+    font-family: 'Lobster', cursive;
+    font-family: 'Lora', serif;
+    color: fade-in($color: grey, $amount: 0);
   }
 }
+
+// .App-link {
+//   color: #61dafb;
+// }
+
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }

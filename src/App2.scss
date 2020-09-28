@@ -1,0 +1,311 @@
+.App2 {
+
+    .container {
+        padding: 0 144px;
+        padding-bottom: 117px;
+        display: flex;
+        flex-direction: column;
+        background: #F6E0ED;
+        width: auto;
+        height: 855px;
+
+        .text {
+            text-align: center;
+            padding-top: 56px;
+
+
+            h1 {
+                font-family: "Lato", sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 50px;
+                line-height: 48px;
+                letter-spacing: 1px;
+                color: #A53434;
+                margin-bottom: 13.46px;
+            }
+        }
+
+        p {
+
+            font-family: "Lato", sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 36px;
+            line-height: 48px;
+            letter-spacing: 1px;
+            color: #4F5255;
+            margin-top: 0px;
+            margin-bottom: 17px;
+        }
+
+        .box {
+            background: #FFFFFF;
+            width: 100%;
+            height: 555px;
+            margin: 0 auto;
+            box-shadow: 0px 4px 40px rgba(228, 131, 103, 0.25);
+        }
+    }
+
+    .container1 {
+        padding: 0 144px;
+        background: #FCF1EF;
+        width: auto;
+        height: 1000px;
+        margin-bottom: 20px;
+        padding-bottom: 50px;
+
+
+
+        .text2 {
+            padding-top: 110px;
+            padding-bottom: 66px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0 auto;
+
+            p {
+                margin: 0 auto;
+                background: white;
+                font-family: "Roboto", sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                text-align: center;
+                color: #000000;
+                font-size: 26px;
+                padding: 12px 23px 12px 23px;
+            }
+        }
+
+
+
+        .content {
+
+            width: 100%;
+            height: 500px;
+            margin: 0 auto;
+
+            .box1 {
+                background: #FFFFFF;
+                width: 100%;
+                height: 543px;
+                box-shadow: 0px 4px 40px rgba(228, 131, 103, 0.25);
+
+            }
+
+            h2 {
+                font-family: "Lato", sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 8px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #4F5255;
+                padding-bottom: 10px;
+
+            }
+        }
+
+    }
+
+    .container2 {
+        padding: 0 144px;
+        background: #FCF1EF;
+        width: auto;
+        height: auto;
+
+
+
+        .items {
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 85px;
+            padding-bottom: 85px;
+
+            h1 {
+                font-family: "Lato", sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 8px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #4F5255;
+            }
+
+            .grid {
+                display: grid;
+                width: 100%;
+                height: 700px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-column-gap: 14px;
+
+                .gridbox {
+                    background: white;
+                    box-shadow: 0px 4px 40px rgba(228, 131, 103, 0.25);
+
+                }
+            }
+
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width: 960px) and (min-width: 768px) {
+
+    .App2 {
+
+        .container {
+            padding: 0 50px;
+        }
+
+        .container1 {
+            padding: 0 30px;
+            padding-bottom: 100px;
+
+            .content {
+                h2 {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .container2 {
+            padding: 0 30px;
+
+            .items {
+                margin: 0 auto;
+                padding-top: 85px;
+                padding-bottom: 85px;
+
+                h1 {
+                    font-size: 22px;
+                    line-height: 8px;
+                }
+
+                .grid {
+                    display: grid;
+                    width: 100%;
+                    height: auto;
+                    grid-template-columns: 1fr;
+                    grid-column-gap: 14px;
+
+
+                    .gridbox {
+                        background: white;
+                        box-shadow: 0px 4px 40px rgba(228, 131, 103, 0.25);
+                        height: 500px;
+                        margin-bottom: 15px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+
+    .App2 {
+        .container {
+            padding: 0 14px;
+
+            .text {
+                h1 {
+                    font-size: 22px;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 30px;
+                    line-height: 8px;
+
+                }
+            }
+        }
+
+        .container1 {
+            padding: 0 13px;
+            background: #FCF1EF;
+            height: 1100px;
+            margin-bottom: 20px;
+            padding-bottom: 42px;
+
+            .text-box p {
+                padding-top: 80px;
+                width: 80%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+                margin: 0 auto;
+                font-size: 20px;
+                background-color: transparent;
+            }
+
+            .content {
+
+                width: 100%;
+                height: 900px;
+                margin: 0 auto;
+
+                .box1 {
+
+                    width: 100%;
+                    height: 650px;
+
+                }
+
+                h2 {
+                    font-size: 22px;
+                    line-height: 8px;
+
+                }
+            }
+        }
+
+        .container2 {
+            padding: 0 13px;
+            background: #FCF1EF;
+            width: auto;
+            height: auto;
+
+            .items {
+                margin: 0 auto;
+                padding-top: 85px;
+                padding-bottom: 85px;
+
+                h1 {
+                    font-size: 22px;
+                    line-height: 8px;
+                }
+
+                .grid {
+                    display: grid;
+                    width: 100%;
+                    height: auto;
+                    grid-template-columns: 1fr;
+                    grid-column-gap: 14px;
+
+
+                    .gridbox {
+                        background: white;
+                        box-shadow: 0px 4px 40px rgba(228, 131, 103, 0.25);
+                        height: 500px;
+                        margin-bottom: 15px;
+                    }
+                }
+
+            }
+        }
+
+    }
+}

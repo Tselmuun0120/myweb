@@ -1,45 +1,10 @@
 import React from "react";
-import image1 from "./image1.jpg";
-import image2 from "./image2.jpg";
+import image1 from "../../assets/images/image1.jpg";
+import image2 from "../../assets/images/image2.jpg";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.scss";
-import "./App2.scss";
-const routes = [
-  {
-    path: "/app2",
-    component: App2,
-  },
-  {
-    path: "/app",
-    component: App,
-  },
-];
 
-export default function RouteConfigExample() {
-  return (
-    <Router>
-      <div>
-        <ul>
-          <li>
-            <Link to="/">Homework1</Link>
-          </li>
-          <li>
-            <Link to="/app2">Homework2</Link>
-          </li>
-        </ul>
 
-        <Switch>
-          <Route exact path="/">
-            <App />
-          </Route>
-          <Route path="/app2">
-            <App2 />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
-}
 function App() {
   return (
     <div className="App">
@@ -230,101 +195,4 @@ function App() {
   );
 }
 
-function App2() {
-  return (
-    <div className="App2">
-      <section className="container">
-        <div className="text">
-          <h1>FREE CASHMERE GIFTS</h1>
-          <p>RECEIVE A GIFT WITH YOUR PURCHASE</p>
-        </div>
-
-        <div className="box"></div>
-      </section>
-
-      <section className="container1">
-          <div className="text2">
-            <p>
-              Quis ut amet ut minim aliqua qui proident. Exercitation esse ipsum
-              officia magna fugiat esse elit sint Lorem mollit nostrud nisi
-              minim. Quis tempor labore aliquip ea veniam.
-            </p>
-          </div>
-        
-
-        <div className="content">
-          <h2>ORDER OVER $89</h2>
-
-          <div className="box1"></div>
-        </div>
-      </section>
-
-      <section className="container2">
-        <div className="items">
-          <h1>ORDER OVER $89</h1>
-          <div className="grid">
-            <div className="gridbox"></div>
-            <div className="gridbox"></div>
-            <div className="gridbox"></div>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
-
-{
-  /* <div class="mainLayout">
-    <div class="header">
-        <div class="img-box">
-            <img> dfd</img>
-        </div>
-    </div>
-    
-    <div class="description">
-        <h1>df</h1>
-    </div>
-
-    <div class="history">
-        <div class="left">
-            <div class="line">
-                <div class="date">
-                    <h4>78766</h4>
-                </div>
-                <div class="text">
-                    <p>ghjk</p>
-                </div>
-            </div>
-
-            <div class="line">
-                <div class="date">
-                    <h4>78766</h4>
-                </div>
-                <div class="text">
-                    <p>ghjk</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="right">
-            <div class="img">
-                    adfdssfsdfasdf
-            </div>
-            <div class="grid-row">
-                <div class="col">
-                    <div class="date">
-                        <h4>78766</h4>
-                    </div>
-                    <div class="text">
-                        <p>ghjk</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-
-    </div>
-</div> */
-}
+export default App;

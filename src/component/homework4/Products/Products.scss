@@ -3,9 +3,11 @@
     max-width: 100%;
     padding: 0px 43px;
     object-fit: cover;
+
     .gobi {
       text-align: center;
       padding: 70px 0 75px 0;
+
       h2 {
         font-family: "Lato", sans-serif;
         font-style: normal;
@@ -16,6 +18,7 @@
         letter-spacing: 0.25px;
         color: rgba(0, 0, 0, 0.87);
       }
+
       span {
         font-family: "Lato", sans-serif;
         font-style: italic;
@@ -27,6 +30,7 @@
         color: rgba(0, 0, 0, 0.87);
       }
     }
+
     .grids {
       display: grid;
       grid-template-areas:
@@ -36,10 +40,12 @@
       gap: 2px;
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(3);
+
       div {
         position: relative;
         overflow: hidden;
       }
+
       div img {
         width: 100%;
         object-fit: cover;
@@ -48,9 +54,11 @@
         transform: scale(1.1);
       }
     }
+
     .one {
       grid-area: one;
     }
+
     .two {
       grid-area: two;
     }
@@ -58,6 +66,7 @@
     .three {
       grid-area: three;
     }
+
     .four {
       grid-area: four;
     }
@@ -69,12 +78,15 @@
     .six {
       grid-area: six;
     }
+
     .seven {
       grid-area: seven;
     }
+
     .eight {
       grid-area: eight;
     }
+
     .nine {
       grid-area: nine;
     }
@@ -82,7 +94,7 @@
 }
 
 @media screen and (max-width: 960px) and (min-width: 768px) {
-  .collage .container {
+  .insta .container {
     max-width: 100%;
     padding: 0px 10px;
     object-fit: cover;
@@ -90,29 +102,32 @@
 }
 
 @media screen and (max-width: 767px) and (min-width: 320px) {
-  .collage .container {
+  .insta .container {
     max-width: 100%;
     padding: 0px 5px;
     object-fit: cover;
-    .grid {
+
+    .grids {
       display: grid;
       grid-template-areas:
-        "one one "
-        "two two "
-        "two two   "
-        " three four"
-        "five  six "
-        "seven seven "
+        "one one"
+        "two two"
+        "two two"
+        "three four"
+        "five  six"
+        "seven seven"
         "eight eight"
         "nine nine"
-        " nine nine";
+        "nine nine";
       gap: 2px;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(9);
+
       div {
         position: relative;
         overflow: hidden;
       }
+
       div img {
         width: 100%;
         object-fit: cover;
@@ -121,9 +136,11 @@
         transform: scale(1.1);
       }
     }
+
     .one {
       grid-area: one;
     }
+
     .two {
       grid-area: two;
     }
@@ -131,6 +148,7 @@
     .three {
       grid-area: three;
     }
+
     .four {
       grid-area: four;
     }
@@ -142,12 +160,15 @@
     .six {
       grid-area: six;
     }
+
     .seven {
       grid-area: seven;
     }
+
     .eight {
       grid-area: eight;
     }
+
     .nine {
       grid-area: nine;
     }

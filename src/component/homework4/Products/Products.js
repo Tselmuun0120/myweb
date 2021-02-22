@@ -30,7 +30,7 @@ export default (function Products() {
             </div>
             <div className="seven">
               <img
-                className="back"
+                className="a"
                 src={require("../../../assets/hw4/instagram/insta7.png")}
               />
             </div>

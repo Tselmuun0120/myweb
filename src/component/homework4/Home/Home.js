@@ -12,10 +12,6 @@ export default (function Home() {
           />
           <div className="shop">
             <h1>LOREM IPSUM</h1>
-            {/* <Link to="/ProductPage/ProductPage.js">
-              {" "}
-              <button>SHOP NOW</button>
-            </Link> */}
           </div>
         </div>
       </div>

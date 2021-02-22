@@ -9,6 +9,7 @@ import Home from "./Home/Home";
 import Four from "./Four/Four";
 import Collection from "./Collection/Collection";
 import Footer from "./Footer/Footer";
+import Collection2 from "./Collection2/Collection2";
 
 const App4 = (props) => {
   
@@ -21,13 +22,16 @@ const App4 = (props) => {
         <Home />
       </section>
       <section>
+        <Collection />
+      </section>
+      <section>
+        <Collection2 />
+      </section>
+      <section>
         <Four />
       </section>
       <section>
         <Products />
-      </section>
-      <section>
-        <Collection />
       </section>
       <section>
         <Footer />

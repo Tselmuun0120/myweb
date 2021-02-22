@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { Maindata } from "../data4";
-import "../Collection/Collection.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "../Collection2/Collection2.scss";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
-import { getProductsFromCollectionHandleInit} from "../query";
+import { getProductsFromCollectionHandleInit } from "../query";
 import { useLazyQuery } from "@apollo/client";
 
 
-export default (function Collection() {
+export default (function SecondProductList() {
   const [
     getProductsFromCollection,
     { data: getProductByHandleData, error: getProductByHandleError },
@@ -23,7 +22,7 @@ export default (function Collection() {
     getProductsFromCollection({
       variables: {
         currencyCode: "CHF",
-        handle: "organic",
+        handle: "basic",
       },
     });
   }, []);
@@ -155,24 +154,11 @@ export default (function Collection() {
     console.log(itemList);
     return itemList;
   }
-
   return (
-    <div className="product-list-section">
+    <div className="product-list-section2">
       <div className="grid-col">
-        <div className="left-section">
-          <div className="img-box">
-            <img
-              src={require("../../../assets/hw4/collection1/pic5.png")}
-              alt="gobi"
-            />
-            <div className="link">
-              <a>Lorem ipsum</a>
-            </div>
-          </div>
-        </div>
-
-        <div className="right-section">
-          <div className="swiper-box">
+        <div className="left-part">
+          <div className="swiper-box2">
             <Swiper
               breakpoints={{
                 // when window width is >= 640px
@@ -190,22 +176,19 @@ export default (function Collection() {
               }}
               navigation
               pagination={{ clickable: true }}
-              onSlideChange={() => {
-                // console.log("slide change")
-              }}
-              onSwiper={(swiper) => {
-                // console.log(swiper)
-              }}
+              onSlideChange={() => console.log("slide change")}
+              onSwiper={(swiper) => console.log(swiper)}
             >
               {dataCollection &&
-                dataCollection.map((item, index) => {
+                dataCollection.map((thing, index) => {
+                  console.log(thing, "val ---");
                   return (
                     <SwiperSlide key={index}>
                       <div className="all">
                         <div className="img-swip">
                           <img
-                            srcSet={item.images}
-                            alt={item.imageAltText}
+                            srcSet={thing.images}
+                            alt={thing.imageAltText}
                           ></img>
                           <div className="wishlist-icon">
                             <svg
@@ -224,22 +207,22 @@ export default (function Collection() {
                         </div>
                         <div className="description">
                           <div className="first">
-                            <h1>{item.title}</h1>
-                            <h4>{item.price}{'CHF'}</h4>
+                            <h1>{thing.title}</h1>
+                            <h4>{thing.price}</h4>
 
-                            {item.colors.length > 0 && (
-                              <p> {item.colors.length} colors</p>
+                            {thing.colors.length > 0 && (
+                              <p> {thing.colors.length} colors</p>
                             )}
                           </div>
                           <div className="overlay">
                             <div className="col1">
                               <h5>Available Colors</h5>
                               <ul>
-                                {item.colors.map((val, index) => {
+                                {thing.colors.map((val, index) => {
                                   return (
                                     <a href={val.handle}>
                                       <li>
-                                       {val.color}
+                                        {val.color}
                                       </li>
                                     </a>
                                   );
@@ -248,7 +231,7 @@ export default (function Collection() {
                             </div>
                             <span>Available Sizes</span>
                             <ul>
-                              <li>{item.size}</li>
+                              <li>{thing.size}</li>
                             </ul>
                           </div>
                         </div>
@@ -257,6 +240,17 @@ export default (function Collection() {
                   );
                 })}
             </Swiper>
+          </div>
+        </div>
+        <div className="right-part">
+          <div className="img-box">
+            <img
+              src={require("../../../assets/hw4/collection2/img5.png")}
+              alt="gobi"
+            />
+            <div className="text">
+              <a>Lorem ipsum</a>
+            </div>
           </div>
         </div>
       </div>

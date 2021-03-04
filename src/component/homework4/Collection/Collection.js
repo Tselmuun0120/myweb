@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Maindata } from "../data4";
 import "../Collection/Collection.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
+import { primeColorOrder, processSpecialColorName } from './ProductColor.js';
 import { getProductsFromCollectionHandleInit} from "../query";
 import { useLazyQuery } from "@apollo/client";
 

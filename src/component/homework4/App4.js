@@ -22,7 +22,7 @@ const App4 = (props) => {
         <Home />
       </section>
       <section>
-        <Collection />
+        <Collection/>
       </section>
       <section>
         <Collection2 />

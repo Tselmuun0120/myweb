@@ -1,22 +1,27 @@
 .footer {
   .container {
     padding: 87px 34px 20px 34px;
+
     .footer-icons {
       justify-content: space-between;
       display: flex;
       flex-wrap: wrap;
+
       hr {
         width: 100%;
         padding: 0px 100px;
         border: 1px solid #f7f8fa;
       }
+
       ul {
         display: flex;
         flex-wrap: wrap;
+
         li {
           list-style: none;
           margin-right: 24px;
           margin-bottom: 10px;
+
           a {
             font-family: "Lato", sans-serif;
             font-style: normal;
@@ -30,12 +35,15 @@
         }
       }
     }
+
     .grids {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       justify-content: center;
+
       .footer-copy {
         grid-column-end: 2 span;
+
         .copyright {
           p {
             font-family: "Lato", sans-serif;
@@ -54,10 +62,12 @@
         margin: 28px auto;
         display: flex;
         flex-wrap: wrap;
+
         .payment {
           ul {
             display: flex;
             flex-wrap: wrap;
+
             li {
               list-style: none;
               margin-right: 8px;
@@ -66,9 +76,11 @@
           }
         }
       }
+
       .footer-socials {
         justify-content: flex-end;
         display: flex;
+
         svg {
           margin-left: 32px;
           margin-top: 15px;

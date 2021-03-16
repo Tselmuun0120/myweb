@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "../Collection2/Collection2.scss";
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import { getProductsFromCollectionHandleInit } from "../query";
 import { useLazyQuery } from "@apollo/client";
-
 
 export default (function SecondProductList() {
   const [
@@ -23,6 +21,7 @@ export default (function SecondProductList() {
       variables: {
         currencyCode: "CHF",
         handle: "basic",
+        first: 20,
       },
     });
   }, []);
@@ -195,7 +194,6 @@ export default (function SecondProductList() {
                               width="18"
                               height="18"
                               viewBox="0 0 16 15"
-                              fill="none"
                               xmlns="http://www.w3.org/2000/svg"
                             >
                               <path
@@ -208,7 +206,10 @@ export default (function SecondProductList() {
                         <div className="description">
                           <div className="first">
                             <h1>{thing.title}</h1>
-                            <h4>{thing.price}</h4>
+                            <h4>
+                              {thing.price}
+                              {"CHF"}
+                            </h4>
 
                             {thing.colors.length > 0 && (
                               <p> {thing.colors.length} colors</p>
@@ -221,9 +222,7 @@ export default (function SecondProductList() {
                                 {thing.colors.map((val, index) => {
                                   return (
                                     <a href={val.handle}>
-                                      <li>
-                                        {val.color}
-                                      </li>
+                                      <li>{val.color}</li>
                                     </a>
                                   );
                                 })}

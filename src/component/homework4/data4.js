@@ -25,76 +25,6 @@ export const Maindata = {
     ],
   },
 
-  swiper1: {
-    data: [
-      {
-        id: "001",
-        name: "Lorem ipsum dolor sit amet",
-        price: "£ 189.00",
-        colors: "+6 Colors ",
-        image: "h21.png",
-        alt: "Lorem ipsum dolor sit amet",
-      },
-      {
-        id: "001",
-        name: "Lorem ipsum dolor sit amet",
-        price: "£ 389.00",
-        colors: "+6 Colors ",
-        image: "h55.png",
-        alt: "Lorem ipsum dolor sit amet",
-      },
-      {
-        id: "001",
-        name: "Lorem ipsum dolor sit amet",
-        price: "£ 179.00",
-        colors: "+6 Colors ",
-        image: "h19.png",
-        alt: "Lorem ipsum dolor sit amet",
-      },
-      {
-        id: "001",
-        name: "Lorem ipsum dolor sit amet",
-        price: "£ 439.00",
-        colors: "+6 Colors ",
-        image: "h18.png",
-        alt: "Lorem ipsum dolor sit amet",
-      },
-      {
-        id: "001",
-        name: "Lorem ipsum dolor sit amet",
-        price: "£ 889.00",
-        colors: "+6 Colors ",
-        image: "h21.png",
-        alt: "Lorem ipsum dolor sit amet",
-      },
-        {
-        id: "001",
-        name: "Lorem ipsum dolor sit amet",
-        price: "£ 389.00",
-        colors: "+6 Colors ",
-        image: "h55.png",
-        alt: "Lorem ipsum dolor sit amet",
-      },
-        {
-        id: "001",
-        name: "Lorem ipsum dolor sit amet",
-        price: "£ 179.00",
-        colors: "+6 Colors ",
-        image: "s3.png",
-        alt: "Lorem ipsum dolor sit amet",
-      },
-       {
-        id: "001",
-        name: "Lorem ipsum dolor sit amet",
-        price: "£ 439.00",
-        colors: "+6 Colors ",
-        image: "s5.png",
-        alt: "Lorem ipsum dolor sit amet",
-      },
-    ],
-  },
-
-
   Bottom: {
     data: [
       {
@@ -133,8 +63,7 @@ export const Maindata = {
         item: "Gifts",
         link: "https://www.gobicashmere.com/",
       },
-
-    ]
+    ],
   },
   paymentIcons: {
     data: [

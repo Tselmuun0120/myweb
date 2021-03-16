@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Maindata } from "../data4";
 import "../Collection/Collection.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
-import { primeColorOrder, processSpecialColorName } from './ProductColor.js';
-import { getProductsFromCollectionHandleInit} from "../query";
+import { getProductsFromCollectionHandleInit } from "../query";
 import { useLazyQuery } from "@apollo/client";
-
 
 export default (function Collection() {
   const [
@@ -225,7 +222,10 @@ export default (function Collection() {
                         <div className="description">
                           <div className="first">
                             <h1>{item.title}</h1>
-                            <h4>{item.price}{'CHF'}</h4>
+                            <h4>
+                              {item.price}
+                              {"CHF"}
+                            </h4>
 
                             {item.colors.length > 0 && (
                               <p> {item.colors.length} colors</p>
@@ -238,9 +238,7 @@ export default (function Collection() {
                                 {item.colors.map((val, index) => {
                                   return (
                                     <a href={val.handle}>
-                                      <li>
-                                       {val.color}
-                                      </li>
+                                      <li>{val.color}</li>
                                     </a>
                                   );
                                 })}

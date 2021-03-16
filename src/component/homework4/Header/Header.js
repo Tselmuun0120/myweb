@@ -50,7 +50,7 @@ export default (function Header() {
               </form>
             </div>
             <div className="account-svg">
-              <a href="#">
+              <a href="https://www.gobicashmere.com/account">
                 <svg
                   width="14"
                   height="16"
@@ -72,7 +72,7 @@ export default (function Header() {
               </a>
             </div>
             <div className="wishlist-svg">
-              <a href="#">
+              <a href="https://www.gobicashmere.com/wishlist">
                 <svg
                   width="16"
                   height="14"
@@ -113,7 +113,9 @@ export default (function Header() {
               <div key={"naviMenu" + index} className={"navi-menu"}>
                 <ul key={"naviKey" + index}>
                   <li key={"nakeLiKey" + index}>
-                    <a href="#">{list.submenu}</a>
+                    <a href="https://www.gobicashmere.com/collections/all">
+                      {list.submenu}
+                    </a>
                   </li>
                 </ul>
               </div>
